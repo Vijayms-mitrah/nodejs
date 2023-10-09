@@ -9,7 +9,7 @@ const { registration, login, getCricketers, authCheck } = require('../controller
 const routes = (app, client) => {
 
     //user-Auth
-    router.post('/registration', registration)
+    router.get('/registration', registration)
     router.get("/login", login);
     router.get('/cricketers', authCheck, getCricketers)
 

@@ -11,6 +11,7 @@ const schema = require('../helper/validation');
 const registration = async(req, res) => {
 try{    
     user = req.body;
+    console.log("userDetails", user);
     const {error} = schema.registration.validate(user)
     if(!error){
         console.log("error123", error);
