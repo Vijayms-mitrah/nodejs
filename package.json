@@ -20,5 +20,8 @@
     "pg": "^8.11.3",
     "sequelize": "^6.33.0",
     "winston": "^3.10.0"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }
