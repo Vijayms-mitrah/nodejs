@@ -18,3 +18,5 @@
 {"BaseUrl":"","Host":"localhost:8000","Path":"http://localhost:8000","level":"info","message":"Success","timestamp":"2023-10-03T10:15:48.055Z"}
 {"BaseUrl":"","Host":"localhost:8000","Path":"http://localhost:8000","level":"error","message":"relation \"cricketerss\" does not exist","timestamp":"2023-10-03T11:39:45.398Z"}
 {"BaseUrl":"","Host":"localhost:8000","Path":"http://localhost:8000","level":"error","message":"relation \"cricketerss\" does not exist","timestamp":"2023-10-03T11:40:20.952Z"}
+{"BaseUrl":"","Host":"localhost:8000","Path":"http://localhost:8000","level":"error","message":"relation \"cricketerss\" does not exist","timestamp":"2023-10-09T13:22:47.802Z"}
+{"BaseUrl":"","Host":"localhost:8000","Path":"http://localhost:8000","level":"info","message":"Success","timestamp":"2023-10-09T13:22:57.892Z"}
