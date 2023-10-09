@@ -1,4 +1,4 @@
-const {createLogger, transports, format} = require('winston')
+const { createLogger, transports, format } = require("winston");
 
 // const levels = {
 //     error: 0,
@@ -10,21 +10,19 @@ const {createLogger, transports, format} = require('winston')
 //     silly: 6
 //   };
 
-
 const customerLogger = createLogger({
-    transports:[
-        new transports.File({
-            filename:"src/log/info.log",
-            level:"info",
-            format: format.combine(format.timestamp(), format.json()),
-        }),
-        new transports.File({
-            filename:"src/log/error.log",
-            level:"error",
-            format: format.combine(format.timestamp(), format.json())
-        })
-    ]
-})
+  transports: [
+    new transports.File({
+      filename: "src/log/info.log",
+      level: "info",
+      format: format.combine(format.timestamp(), format.json()),
+    }),
+    new transports.File({
+      filename: "src/log/error.log",
+      level: "error",
+      format: format.combine(format.timestamp(), format.json()),
+    }),
+  ],
+});
 
-module.exports = {customerLogger}
-
+module.exports = { customerLogger };

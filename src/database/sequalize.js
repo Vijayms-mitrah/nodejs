@@ -4,16 +4,11 @@
 //     dialect: /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */
 //   });
 
-
 const Sequelize = require("sequelize");
 
-const sequelize = new Sequelize(
- 'restapi',
- 'postgres',
- '2023', {
- dialect:'postgres',
- host: 'localhost'
- }
-)
+const sequelize = new Sequelize("restapi", "postgres", "2023", {
+  dialect: "postgres",
+  host: "localhost",
+});
 
 module.exports = sequelize;
