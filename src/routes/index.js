@@ -26,6 +26,7 @@ const {
   getCricketers,
   authCheck,
 } = require("../controller/userregistration");
+const { onHandleEmailTrigger } = require("../controller/email");
 
 const routes = (app, client) => {
   //user-Auth
@@ -49,6 +50,8 @@ const routes = (app, client) => {
   router.get("/admins/:id", getAdmin);
   router.delete("/admins/delete/:id", deleteAdmin);
   router.delete("/admins/alldelete", allDelete);
+
+  router.get('/email', onHandleEmailTrigger)
 
   app.use(router);
 };
